@@ -1,0 +1,50 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: row;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  gap: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell {
+  color: var(--color-medium-gray);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.cell:not(:first-child) {
+  padding: 10px;
+}
+
+.labelFirst {
+  justify-content: left;
+}
+
+@media (max-width: 768px) {
+  .hideBelow768 {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .hideBelow670 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkbox {
+    display: none;
+  }
+}
+
+@media (max-width: 448px) {
+  .cell,
+  .cell:not(:first-child) {
+    padding: 10px 5px;
+  }
+}

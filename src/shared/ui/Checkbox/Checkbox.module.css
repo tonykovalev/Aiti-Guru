@@ -1,0 +1,33 @@
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--color-dark-gray);
+}
+
+.checkboxLabel:has(input:focus-visible) .customCheckbox {
+  outline: 1px solid var(--color-dark-gray);
+}
+
+.customCheckbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-medium-gray);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.checkboxChecked {
+  background-color: var(--color-dark-blue);
+  border-color: var(--color-dark-gray);
+}

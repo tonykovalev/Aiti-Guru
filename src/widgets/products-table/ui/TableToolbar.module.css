@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.refreshButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 8px;
+}
+
+.cancelSortButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  height: 42px;
+  border-radius: 6px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+}
+
+.cancelSortButton:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-medium-gray);
+}
+
+.cancelSortButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* @media (max-width: 448px) {
+  .buttons {
+    flex-direction: column;
+  }
+} */

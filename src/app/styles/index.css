@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  font-weight: var(--font-weight-regular);
+}
+
+p,
+img,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --color-white: #ffffff;
+  --color-bg: #f9f9f9;
+  --color-font: #232323;
+  --color-white-smoke: #f3f3f3;
+  --color-light-gray: #ededed;
+  --color-medium-gray: #c5c5c5;
+  --color-dark-gray: #9c9c9c;
+  --color-light-blue: #797fea;
+  --color-blue: #242edb;
+  --color-dark-blue: #3c538e;
+  --color-light-red: #ff6347;
+  --font-size-2xs: 12px;
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
