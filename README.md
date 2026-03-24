@@ -1,5 +1,7 @@
 # Aiti Guru — Admin Panel
 
+🔗 [Live Demo](https://aiti-guru-alpha.vercel.app/)
+
 Тестовое задание. Административная панель с авторизацией и управлением товарами.
 
 ## Технологии
